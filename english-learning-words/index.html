@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рівні англійської мови</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Стилі тільки для головної сторінки */
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin: 40px 0 20px;
+        }
+
+        .level-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border-radius: 40px;
+            padding: 40px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #1e293b;
+            border: 2px solid rgba(219, 234, 254, 0.8);
+            box-shadow: 0 15px 30px -10px rgba(0, 67, 156, 0.15);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .level-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 25px 40px -10px #3b82f6;
+        }
+
+        .level-card h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e293b, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+        }
+
+        .level-card p {
+            font-size: 1.2rem;
+            color: #475569;
+            margin: 0;
+        }
+
+        .level-card .btn {
+            margin-top: 15px;
+            background: white;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+            box-shadow: none;
+            padding: 10px 25px;
+        }
+
+        .level-card:hover .btn {
+            background: #3b82f6;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .levels-grid {
+                gap: 20px;
+            }
+            .level-card {
+                padding: 30px 15px;
+            }
+            .level-card h2 {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+                <a href="../index.html">📘 English Level Test</a>
+            </h1>
+            <div class="scoreboard" style="background: transparent; box-shadow: none;"></div>
+            <div class="controls"></div>
+
+                    <!-- Гамбургер-меню (тільки для мобільних) -->
+            <div class="hamburger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                    <span></span>
+                </label>
+                
+                <!-- Навігаційне меню -->
+                <nav class="menu-nav">
+                    <ul>
+                        <li><a href="../english-learning-words/index.html">Слова</a></li>
+                        <li><a href="../english-learning-book/index.html">Книги</a></li>
+                        <li><a href="songs.html">Пісні</a></li>
+                        <li><a href="grammar.html">Граматика</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </header>
+
+        <main>
+            <h2 style="text-align: center; font-size: 2rem; margin: 20px 0; color: #1e293b;">Оберіть свій рівень</h2>
+            <div class="levels-grid">
+                <a href="pages/a1.html" class="level-card">
+                    <h2>A1</h2>
+                    <p>Початківець<br>500 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+                <a href="pages/a2.html" class="level-card">
+                    <h2>A2</h2>
+                    <p>Елементарний<br>1000 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+                <a href="pages/b1.html" class="level-card">
+                    <h2>B1</h2>
+                    <p>Середній<br>2000 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+                <a href="pages/b2.html" class="level-card">
+                    <h2>B2</h2>
+                    <p>Вище середнього<br>4000 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+                <a href="pages/c1.html" class="level-card">
+                    <h2>C1</h2>
+                    <p>Просунутий<br>8000 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+                <a href="pages/c2.html" class="level-card">
+                    <h2>C2</h2>
+                    <p>Вільне володіння<br>16000 слів</p>
+                    <span class="btn">Почати</span>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Оберіть рівень і вивчайте слова</p>
+        </footer>
+    </div>
+</body>
+</html>

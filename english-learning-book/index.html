@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventures of Tom Sawyer (English learning)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="book-container">
+    <!-- Логотип і меню -->
+    <div class="header">
+        <h1 class="logo">
+            <a href="../index.html">📘 English Level Test</a>
+        </h1>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="../english-learning-words/index.html">Слова</a></li>
+                <li><a href="../english-learning-book/index.html">Книги</a></li>
+                <li><a href="songs.html">Пісні</a></li>
+                <li><a href="grammar.html">Граматика</a></li>
+            </ul>
+        </nav>
+        <!-- Кнопка ввімкнення/вимкнення звуку -->
+        <button id="sound-toggle" class="sound-btn" title="Увімкнути/вимкнути звук">🔊</button>
+    </div>
+
+    <h1 class="chapter-title">☙ The Adventures of Tom Sawyer ❧</h1>
+
+    <div id="chapter-text" class="text-block">
+        <!-- Текст буде згенеровано JavaScript -->
+    </div>
+
+    <div class="footer-note">
+        ⚡ Клікніть на будь-яке слово — з'явиться переклад українською.
+    </div>
+
+    <!-- Посторінкова навігація -->
+    <div class="pagination">
+        <button id="prev-page" class="page-btn">← Попередня</button>
+        <span id="page-indicator">Сторінка 1 / 1</span>
+        <button id="next-page" class="page-btn">Наступна →</button>
+    </div>
+
+    <!-- Швидкий перехід до сторінки -->
+    <div class="page-jumper">
+        <label for="page-input">Перейти до сторінки:</label>
+        <input type="number" id="page-input" min="1" value="1">
+        <button id="go-to-page" class="page-btn">Go</button>
+    </div>
+
+    <!-- Кнопка для вивчення слів з поточної сторінки -->
+    <div class="learn-button-container" style="text-align: center; margin-top: 1rem;">
+        <button id="learn-page-words" class="page-btn">📚 Вивчати слова з цієї сторінки</button>
+    </div>
+</div>
+
+<!-- невидимий тултіп -->
+<div id="translation-tooltip"></div>
+
+<script src="../english-learning-book/script.js"></script>
+</body>
+</html>

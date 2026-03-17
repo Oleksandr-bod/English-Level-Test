@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Англійська C1 – 8000 слів</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">
+                <a href="../index.html">📘 English C1 <span class="logo-sub">8000 слів</span></a>
+            </h1>
+            <div class="scoreboard">
+                <span>Вивчено: <span id="learned-count">0</span> / <span id="total-words">8000</span></span>
+            </div>
+            <div class="controls">
+                <label class="toggle-text">
+                    <input type="checkbox" id="show-text" checked> Показувати текст
+                </label>
+                <label class="toggle-text">
+                    <input type="checkbox" id="auto-speak" checked> Автоозвучення
+                </label>
+                <button id="reset-btn" class="btn">Старт / Спочатку</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="word-card">
+                <div class="english-word" id="english-word-container">
+                    <span id="english-word"></span>
+                    <button id="speak-btn" class="speak-btn" aria-label="Прослухати">🔊</button>
+                </div>
+            </div>
+
+            <div class="options" id="options">
+                <!-- 4 кнопки будуть додані через JS -->
+            </div>
+
+            <div class="message" id="message"></div>
+        </main>
+
+        <footer>
+            <p>Правильно 5 разів – слово вивчено</p>
+        </footer>
+    </div>
+
+    <script src="../js/c1-words.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

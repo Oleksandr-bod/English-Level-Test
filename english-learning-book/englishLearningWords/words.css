@@ -1,0 +1,110 @@
+/* Додаткові стилі для гри */
+#game-container {
+    text-align: center;
+    margin-top: 2rem;
+    min-height: 300px;
+}
+
+#loading {
+    font-size: 1.2rem;
+    color: #2e4a33;
+}
+
+#progress {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #5f4e3c;
+}
+
+#english-word {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #7d4e3a;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.option-btn {
+    background: #e5d9cc;
+    border: 2px solid #b99e82;
+    color: #2c3e4f;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Georgia', serif;
+}
+
+.option-btn:hover:not(:disabled) {
+    background: #d4c3b0;
+    border-color: #8f6e50;
+}
+
+.option-btn.correct {
+    background: #2e7d32;
+    border-color: #1b5e20;
+    color: white;
+}
+
+.option-btn.wrong {
+    background: #c62828;
+    border-color: #8b0000;
+    color: white;
+}
+
+.option-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+#message {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    min-height: 2rem;
+}
+
+#next-btn {
+    background: #2e4a33;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.6rem 2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #1e3a23;
+}
+
+#next-btn:hover {
+    background: #1e3a23;
+}
+
+#congrats {
+    font-size: 2rem;
+    color: #2e7d32;
+    padding: 2rem;
+}
+
+#no-words {
+    font-size: 1.2rem;
+    color: #c62828;
+}
+
+.loading-indicator {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #ffe8c7;
+    border-top-color: #2e4a33;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+    margin-left: 6px;
+}

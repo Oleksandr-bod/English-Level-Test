@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вивчення слів</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="words.css">
+</head>
+<body>
+<div class="book-container">
+    <div class="header">
+        <h1 class="logo">
+            <a href="../index.html">📘 English Level Test</a>
+        </h1>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="../english-learning-words/index.html">Слова</a></li>
+                <li><a href="../english-learning-book/index.html">Книги</a></li>
+                <li><a href="songs.html">Пісні</a></li>
+                <li><a href="grammar.html">Граматика</a></li>
+            </ul>
+        </nav>
+                <!-- Кнопка ввімкнення/вимкнення звуку -->
+        <button id="sound-toggle" class="sound-btn" title="Увімкнути/вимкнути звук">🔊</button>
+    </div>
+
+    <h1 class="chapter-title">📖 Вивчення слів зі сторінки</h1>
+
+    <!-- Кнопка повернення до книги -->
+    <div style="text-align: left; margin-bottom: 1rem;">
+        <button id="back-to-book" class="page-btn">← До книги</button>
+    </div>
+
+    <div id="game-container">
+        <div id="loading">Завантаження перекладів... <span class="loading-indicator"></span></div>
+        <div id="progress" style="display:none;">Вивчено: <span id="learned-count">0</span> з <span id="total-count">0</span></div>
+        <div id="question-container" style="display:none;">
+            <div id="english-word"></div>
+            <div id="options">
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+            </div>
+            <div id="message"></div>
+        </div>
+        <div id="congrats" style="display:none;">
+            🎉 Вітаємо! Ви вивчили всі слова з цієї сторінки!
+        </div>
+        <div id="no-words" style="display:none;">
+            Немає слів для вивчення. <a href="../../english-learning-book/index.html">Повернутись до книги</a> та виберіть сторінку.
+        </div>
+    </div>
+</div>
+<script src="words.js"></script>
+</body>
+</html>
