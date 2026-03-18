@@ -1,7 +1,8 @@
 (function() {
     // ---------- ПОВНИЙ ТЕКСТ КНИГИ (усі розділи) ----------
     const rawText = `THE ADVENTURES OF TOM SAWYER
-
+CHAPTER I
+“Tom!”
 No answer.
 “What’s gone with that boy, I wonder? You TOM!”
 No answer.
