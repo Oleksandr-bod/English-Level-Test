@@ -4,6 +4,8 @@
 CHAPTER I
 “Tom!”
 No answer.
+“TOM!”
+No answer.
 “What’s gone with that boy, I wonder? You TOM!”
 No answer.
 The old lady pulled her spectacles down and looked over them about the
@@ -8274,6 +8276,7 @@ const hardcodedTranslations = {
     "adult": "дорослий",
     "adventure": "пригода",
     "advice": "порада",
+    "ADVENTURES": "ПРИГОДИ",
     "affair": "справа",
     "afford": "дозволити собі",
     "afraid": "наляканий",
@@ -8487,6 +8490,7 @@ const hardcodedTranslations = {
     "button": "кнопка",
     "buy": "купувати",
     "by": "біля",
+    "built": "побудований",
     "cabbage": "капуста",
     "cabin": "кабіна",
     "cake": "торт",
@@ -8551,6 +8555,7 @@ const hardcodedTranslations = {
     "choose": "вибирати",
     "chop": "рубати",
     "church": "церква",
+    "CHAPTER": "РОЗДІЛ",
     "cigarette": "сигарета",
     "circle": "коло",
     "circus": "цирк",
@@ -9315,6 +9320,7 @@ const hardcodedTranslations = {
     "lonely": "самотній",
     "long": "довгий",
     "look": "дивитися",
+    "looked": "виглядав",
     "loose": "вільний",
     "lord": "лорд",
     "lose": "втрачати",
@@ -9607,6 +9613,7 @@ const hardcodedTranslations = {
     "polite": "ввічливий",
     "political": "політичний",
     "pool": "басейн",
+    "pulled": "потягнув",
     "poor": "бідний",
     "popular": "популярний",
     "population": "населення",
@@ -9961,10 +9968,12 @@ const hardcodedTranslations = {
     "sorrow": "печаль",
     "sorry": "вибачте",
     "sort": "сорт",
+    "SAWYER": "СОЙЄР",
     "soul": "душа",
     "sound": "звук",
     "soup": "суп",
     "sour": "кислий",
+    "seen": "бачив",
     "south": "південь",
     "space": "простір",
     "spade": "лопата",
@@ -9984,6 +9993,7 @@ const hardcodedTranslations = {
     "spot": "пляма",
     "spread": "поширювати",
     "spring": "весна",
+    "spectacles": "видовищ",
     "square": "квадрат",
     "stable": "стабільний",
     "stage": "сцена",
@@ -10037,6 +10047,7 @@ const hardcodedTranslations = {
     "study": "вивчати",
     "stuff": "речі",
     "stupid": "дурний",
+    "style": "стиль",
     "subject": "тема",
     "substance": "речовина",
     "succeed": "досягати успіху",
@@ -10149,6 +10160,7 @@ const hardcodedTranslations = {
     "toe": "палець ноги",
     "together": "разом",
     "tomorrow": "завтра",
+    "TOM": "ТОМ",
     "tone": "тон",
     "tongue": "язик",
     "tonight": "сьогодні ввечері",
@@ -10329,6 +10341,7 @@ const hardcodedTranslations = {
     "write": "писати",
     "writer": "письменник",
     "wrong": "неправильний",
+    "were": "були",
     "yard": "двір",
     "year": "рік",
     "yellow": "жовтий",
@@ -10341,13 +10354,28 @@ const hardcodedTranslations = {
     "yours": "твій",
     "yourself": "себе",
     "youth": "молодість",
-    "zeal": "завзяття"
+    "zeal": "завзяття",
+    "lids": "кришки",
+    "perplexed": "спантеличений",
+    "said": "сказав",
+    "fiercely": "люто",
+    "I’ll": "Я буду",
+    "did ": "зробив",
+    "bending": "згинання",
+    "broom": "мітла",
+    "needed": "needed",
+    "punctuate": "пунктуація",
+    "punches": "удари",
+    "resurrected": "воскреслий",
+    "tomato": "помідор",
+    "vines": "виноградні лози",
+    "jimpson": "Джимпсон",
+    "weeds": "бур'яни",
+    "constituted": "складався"
 };
     function expandContraction(word) {
         const lower = word.toLowerCase();
         const map = {
-            // "ain't": "are not",
-            // "ain’t": "are not",
             "can't": "cannot",
             "can’t": "cannot",
             "don't": "do not",
